@@ -1,0 +1,14 @@
+@MedCenter_HostAddress = http://localhost:5276
+
+GET {{MedCenter_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{MedCenter_HostAddress}}/patients
+Content-Type: application/json
+
+{
+    "name": "Иван",
+    "seName": "Иванов",
+    "birthDay": "2000-05-10"
+}
